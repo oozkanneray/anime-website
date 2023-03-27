@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useSWR from "swr"
 import Anime from "../Anime";
+import SearchBar from "../searchbar";
 
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -40,7 +41,7 @@ function Search() {
 
     
         if (error) return "An error has occurred.";
-        if (isLoading) return "Loading...";
+        if (isLoading) return <SearchBar/>;
         return ( 
             <div>
                 <div className="flex items-center justify-center">
@@ -59,7 +60,6 @@ function Search() {
                         className="w-28 h-12 border-4 m-2 border-black bg-white text-black text-2xl rounded-lg hover:bg-navbarColor hover:text-white">Search</button>
                     </div>
                 </div>
-                Search Component
                 {data.data.map(item => <Anime key={item.key} item={item}/>)}
                 <button onClick={handleClick}>Refresh</button>
             </div>

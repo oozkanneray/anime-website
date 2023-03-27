@@ -2,7 +2,7 @@ import { Route,Routes } from "react-router-dom"
 import Home from "./components/pages/Home"
 import Layout from "./components/pages/Layout"
 import Search from "./components/pages/Search"
-import Top from "./components/Top"
+import Top from "./components/pages/Top"
 
 function App() {
 
