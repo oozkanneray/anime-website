@@ -1,4 +1,4 @@
-function Test(props) {
+function Anime(props) {
     return (  
         <div>
             <div>{props.item.title}</div>
@@ -7,4 +7,4 @@ function Test(props) {
     );
 }
 
-export default Test;
+export default Anime;
