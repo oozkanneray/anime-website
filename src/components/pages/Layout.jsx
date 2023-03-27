@@ -5,8 +5,8 @@ function Layout() {
 
     const [active,setActive] = useState(1)
 
-    let isActive = "w-38 border-2 border-white p-4 rounded-lg";
-    let isNotActive = "transition-all w-38 p-4 border-2 border-transparent hover:border-2 hover:border-white hover:rounded-lg"
+    let isActive = "w-38 border-4 border-white p-4 rounded-2xl";
+    let isNotActive = "transition-all w-38 p-4 border-4 border-transparent hover:border-2 hover:border-white hover:rounded-2xl"
 
 
     return ( 
