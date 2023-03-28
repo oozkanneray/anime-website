@@ -3,7 +3,7 @@ function TopList(props) {
     <div className="flex flex-col">
         <div className="flex border-1 border-4 border-cyan-700 rounded-lg p-5 m-20">
             <div className="flex items-center justify-center text-6xl text-cyan-700 w-1 m-12">{props.item.rank}</div>
-            <img className="object-cover flex items-center justify-center relative " src={props.item.images.jpg.image_url}></img>
+            <img className="object-cover flex items-center justify-center relative rounded-lg" src={props.item.images.jpg.image_url}></img>
             <div className="flex flex-col m-5 w-[250%]">
                 <div className="text-3xl text-cyan-700 mb-6">{props.item.title}</div>
                 <div className="w-5/6 text-lg">{props.item.synopsis}</div>

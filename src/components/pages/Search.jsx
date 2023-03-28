@@ -48,11 +48,12 @@ function Search() {
                     <div className="flex flex-row m-10">
                         <input
                         onChange={inputHandler}
-                        
-                        className="border-2 border-black m-2 rounded-lg text-2xl pl-3"></input>
-
-
-
+                        placeholder="Type a Anime!"
+                        className="border-2 border-black m-2 rounded-lg text-2xl pl-3"
+                        onKeyDown={(e) => {
+                            if(e.key == "Enter") setLink(setAPI())
+                        }}
+                        />
                         <button 
 
                         onClick={() => {setLink(setAPI())}}
@@ -61,7 +62,7 @@ function Search() {
                     </div>
                 </div>
                 {data.data.map(item => <Anime key={item.key} item={item}/>)}
-                <button onClick={handleClick}>Refresh</button>
+                {handleClick}
             </div>
          );
 }
