@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useSWR from "swr"
 import Anime from "../Anime";
-import SearchBar from "../searchbar";
+import SearchBar from "../SearchBar";
 
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
