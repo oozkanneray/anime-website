@@ -8,7 +8,6 @@ function Anime(props) {
                     <div className="w-5/6">{props.item.synopsis}</div>
                     <div className="w-5/6">{props.item.score}</div>
                 </div>
-
             </div>
         </div>
     );
