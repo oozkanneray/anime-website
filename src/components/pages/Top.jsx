@@ -6,7 +6,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 function Top() {
 
-  const [page,setPage] = useState(2);
+  const [page,setPage] = useState(1);
 
   let { data, error, isLoading } = useSWR(
     `https://api.jikan.moe/v4/top/anime?page=${page}`,
