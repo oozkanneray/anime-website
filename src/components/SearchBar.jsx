@@ -1,6 +1,6 @@
 function SearchBar() {
     return ( 
-        <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center">
         <div className="flex flex-row m-10">
             <input
             className="border-2 border-black m-2 rounded-lg text-2xl pl-3"></input>

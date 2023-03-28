@@ -55,7 +55,6 @@ function Search() {
                         }}
                         />
                         <button 
-
                         onClick={() => {setLink(setAPI())}}
 
                         className="w-28 h-12 border-4 m-2 border-black bg-white text-black text-2xl rounded-lg hover:bg-navbarColor hover:text-white">Search</button>
